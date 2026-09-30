@@ -8,15 +8,17 @@
 import java.util.*; 
 import java.util.stream.Stream;
 
+import javax.swing.JOptionPane;
+
 public class main {
 
     public static void main(String[] args) {
 
         String nombre;
-        double salario;
+        double salario=600;
         int opcion;
         
-        Scanner entrada = new Scanner(System.in)
+        Scanner entrada = new Scanner(System.in);
 
 
         System.out.println("########################");
@@ -28,12 +30,14 @@ public class main {
         opcion = entrada.nextInt();                                                                                                                 
         switch (opcion) {
             case 1:
+                salario = salario + ( salario*0.25);
+                break;
 
             case 2:
 
             case 3:
        
         } 
-        
+        JOptionPane.showMessageDialog(null, "El salario es:"+salario);
     }
 }
